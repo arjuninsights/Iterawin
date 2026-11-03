@@ -1,0 +1,396 @@
+{
+ "tech": [
+  {
+   "icon": "🐍",
+   "name": "Python",
+   "level": "Beginner to Advanced",
+   "duration": "6 weeks",
+   "topics": [
+    "Basics",
+    "OOP",
+    "Files",
+    "Projects"
+   ],
+   "meaning": "Python is a simple, easy to read programming language. It is used for websites, automation, data analysis and AI.",
+   "why": "It is the easiest language to start with, and many college projects and jobs use it.",
+   "learn": [
+    "Variables, loops and functions",
+    "Lists, dictionaries and files",
+    "Object oriented programming",
+    "Mini projects like a quiz app and a chatbot"
+   ],
+   "example": "name = \"iterawin\"\nfor i in range(3):\n    print(\"Hello\", name, i)"
+  },
+  {
+   "icon": "🌐",
+   "name": "HTML, CSS & JavaScript",
+   "level": "Beginner to Intermediate",
+   "duration": "8 weeks",
+   "topics": [
+    "Layouts",
+    "Responsive",
+    "DOM",
+    "APIs"
+   ],
+   "meaning": "HTML builds the structure of a web page, CSS styles it, and JavaScript makes it interactive. Together they power every website.",
+   "why": "You can build and publish a real website in a few weeks and show it to anyone.",
+   "learn": [
+    "Page structure and semantic HTML",
+    "Flexbox, grid and mobile friendly design",
+    "JavaScript basics and the DOM",
+    "Calling APIs and building a portfolio"
+   ],
+   "example": "document.querySelector('button')\n  .addEventListener('click', () => {\n    alert('Hello from iterawin!');\n  });"
+  },
+  {
+   "icon": "⚛️",
+   "name": "React",
+   "level": "Intermediate",
+   "duration": "5 weeks",
+   "topics": [
+    "Components",
+    "Hooks",
+    "Routing",
+    "Deploy"
+   ],
+   "meaning": "React is a JavaScript library for building fast web apps from small, reusable pieces called components.",
+   "why": "It is one of the most asked skills for front end jobs and internships.",
+   "learn": [
+    "Components and props",
+    "State and hooks",
+    "Routing between pages",
+    "Deploying your app for free"
+   ],
+   "example": "function Hello({ name }) {\n  return <h1>Hello, {name}!</h1>;\n}"
+  },
+  {
+   "icon": "☕",
+   "name": "Java",
+   "level": "Beginner to Advanced",
+   "duration": "8 weeks",
+   "topics": [
+    "Core Java",
+    "OOP",
+    "Collections",
+    "JDBC"
+   ],
+   "meaning": "Java is a strong, widely used programming language for apps, banking systems and Android development.",
+   "why": "It is part of most college syllabuses and is used by many big companies.",
+   "learn": [
+    "Syntax, classes and objects",
+    "Inheritance and interfaces",
+    "Collections and exceptions",
+    "Database connection with JDBC"
+   ],
+   "example": "public class Hello {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, iterawin!\");\n  }\n}"
+  },
+  {
+   "icon": "🗄️",
+   "name": "SQL & MySQL",
+   "level": "Beginner",
+   "duration": "3 weeks",
+   "topics": [
+    "Queries",
+    "Joins",
+    "Design",
+    "Mini project"
+   ],
+   "meaning": "SQL (Structured Query Language) is the language used to store, read and update data in a database. MySQL is a popular database that runs SQL.",
+   "why": "Almost every app stores data, so SQL is useful in every project and every interview.",
+   "learn": [
+    "Creating tables and inserting data",
+    "SELECT, WHERE, ORDER BY and GROUP BY",
+    "Joins across tables",
+    "Designing a database for a mini project"
+   ],
+   "example": "SELECT name, marks\nFROM students\nWHERE marks > 80\nORDER BY marks DESC;"
+  },
+  {
+   "icon": "🔧",
+   "name": "Git & GitHub",
+   "level": "Beginner",
+   "duration": "1 week",
+   "topics": [
+    "Commits",
+    "Branches",
+    "Pull requests",
+    "Pages"
+   ],
+   "meaning": "Git tracks the changes in your code. GitHub is a website where you store your code and share it with others.",
+   "why": "Recruiters check your GitHub profile. It also lets you publish websites for free.",
+   "learn": [
+    "Commit, push and pull",
+    "Branches and merging",
+    "Working with others using pull requests",
+    "Publishing a site with GitHub Pages"
+   ],
+   "example": "git add .\ngit commit -m \"First commit\"\ngit push origin main"
+  },
+  {
+   "icon": "🧠",
+   "name": "Data Structures",
+   "level": "Intermediate",
+   "duration": "8 weeks",
+   "topics": [
+    "Arrays",
+    "Trees",
+    "Graphs",
+    "Interview Qs"
+   ],
+   "meaning": "Data structures are ways to organise data, like arrays, stacks, trees and graphs, so programs can work with it quickly.",
+   "why": "They are the base of coding interviews and help you write faster, cleaner programs.",
+   "learn": [
+    "Arrays, linked lists, stacks and queues",
+    "Trees and graphs",
+    "Searching and sorting",
+    "Practice with interview questions"
+   ],
+   "example": "stack = []\nstack.append(1)\nstack.append(2)\nprint(stack.pop())  # 2"
+  },
+  {
+   "icon": "🤖",
+   "name": "Machine Learning",
+   "level": "Intermediate",
+   "duration": "8 weeks",
+   "topics": [
+    "Pandas",
+    "Models",
+    "Evaluation",
+    "Project"
+   ],
+   "meaning": "Machine learning lets a computer learn patterns from data and make predictions, like suggesting a movie or spotting spam.",
+   "why": "It is a fast growing field and makes a great final year project.",
+   "learn": [
+    "Working with data using Pandas",
+    "Training simple models",
+    "Checking how good a model is",
+    "A complete prediction project"
+   ],
+   "example": "from sklearn.linear_model import LinearRegression\nmodel = LinearRegression().fit(X, y)\nprint(model.predict([[5]]))"
+  }
+ ],
+ "project": [
+  {
+   "icon": "🎓",
+   "name": "Student Management System",
+   "price": 999,
+   "currency": "₹",
+   "tags": [
+    "Python",
+    "MySQL"
+   ],
+   "desc": "Add, search and manage student records.",
+   "overview": "A desktop style app that stores student details, marks and attendance in a MySQL database. It is simple to explain in a viva and easy to extend.",
+   "features": [
+    "Add, edit and delete students",
+    "Search by name or roll number",
+    "Marks and attendance records",
+    "Printable result report"
+   ],
+   "stack": [
+    "Python",
+    "MySQL",
+    "Tkinter"
+   ],
+   "includes": [
+    "Full source code",
+    "Database file",
+    "Project report",
+    "PPT and viva questions"
+   ],
+   "suitable": "BCA, MCA, B.Tech and diploma",
+   "level": "Beginner",
+   "demoUrl": "",
+   "youtubeId": ""
+  },
+  {
+   "icon": "🛒",
+   "name": "E-commerce Website",
+   "price": 1499,
+   "currency": "₹",
+   "tags": [
+    "HTML",
+    "CSS",
+    "JS"
+   ],
+   "desc": "Product pages, cart and checkout flow.",
+   "overview": "A responsive online shop with product listing, cart and a checkout form. A strong choice for a final year project.",
+   "features": [
+    "Product listing with search",
+    "Add to cart and update quantity",
+    "Checkout form",
+    "Works on mobile and desktop"
+   ],
+   "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+   ],
+   "includes": [
+    "Full source code",
+    "Project report",
+    "PPT",
+    "Setup help"
+   ],
+   "suitable": "BCA, B.Tech and diploma",
+   "level": "Intermediate",
+   "demoUrl": "",
+   "youtubeId": ""
+  },
+  {
+   "icon": "🤖",
+   "name": "Chatbot using Python",
+   "price": 1299,
+   "currency": "₹",
+   "tags": [
+    "Python",
+    "NLP"
+   ],
+   "desc": "A simple AI chatbot with viva notes.",
+   "overview": "A chatbot that understands basic questions and replies using simple natural language processing.",
+   "features": [
+    "Answers common questions",
+    "Easy to add new replies",
+    "Simple chat window",
+    "Clear code with comments"
+   ],
+   "stack": [
+    "Python",
+    "NLTK"
+   ],
+   "includes": [
+    "Full source code",
+    "Project report",
+    "PPT and viva notes"
+   ],
+   "suitable": "MCA, B.Tech and BCA",
+   "level": "Intermediate",
+   "demoUrl": "",
+   "youtubeId": ""
+  },
+  {
+   "icon": "💼",
+   "name": "Portfolio Website Starter",
+   "price": "Free",
+   "currency": "",
+   "tags": [
+    "HTML",
+    "CSS"
+   ],
+   "desc": "A free template to build your own portfolio.",
+   "overview": "A clean one page portfolio template. Replace the text and images and publish it for free on GitHub Pages.",
+   "features": [
+    "Mobile friendly layout",
+    "About, projects and contact sections",
+    "Dark mode",
+    "Easy to edit"
+   ],
+   "stack": [
+    "HTML",
+    "CSS"
+   ],
+   "includes": [
+    "Source code",
+    "Short setup guide"
+   ],
+   "suitable": "Every student",
+   "level": "Beginner",
+   "demoUrl": "",
+   "youtubeId": ""
+  }
+ ],
+ "post": [
+  {
+   "type": "video",
+   "title": "Welcome students: start here",
+   "date": "2026-11-03",
+   "summary": "Who I am and how iterawin helps you.",
+   "youtubeId": "",
+   "body": [
+    "Add your YouTube video ID in js/data.js and the video will play here."
+   ]
+  },
+  {
+   "type": "video",
+   "title": "How to build your first project",
+   "date": "2026-10-28",
+   "summary": "A simple walkthrough for beginners.",
+   "youtubeId": "",
+   "body": [
+    "Add your YouTube video ID in js/data.js and the video will play here."
+   ]
+  },
+  {
+   "type": "motivation",
+   "title": "Do not compare your day one with someone's day 100",
+   "date": "2026-11-02",
+   "summary": "A reminder for every student who feels behind.",
+   "body": [
+    "Everyone starts somewhere. The person you admire also wrote bad code, failed tests and felt lost.",
+    "Keep showing up. Small progress every day closes the gap faster than you think."
+   ]
+  },
+  {
+   "type": "motivation",
+   "title": "Your marks are not your skills",
+   "date": "2026-10-29",
+   "summary": "Practice and projects speak louder than a score.",
+   "body": [
+    "Companies look for people who can build and learn. A good project shows that better than a number.",
+    "Spend this week building one small thing. Then show it to someone."
+   ]
+  },
+  {
+   "type": "motivation",
+   "title": "When you feel like quitting",
+   "date": "2026-10-25",
+   "summary": "Rest, then try one tiny step.",
+   "body": [
+    "Feeling stuck is part of learning, not a sign that you are not good enough.",
+    "Take a break. Come back and solve just one small part of the problem."
+   ]
+  },
+  {
+   "type": "article",
+   "title": "How to choose your final year project",
+   "date": "2026-11-01",
+   "summary": "Pick an idea that is doable and impressive.",
+   "body": [
+    "Choose a problem you understand, like attendance, billing or a study planner.",
+    "Start with a small working version, then add features one by one.",
+    "Make sure you can explain every line of your code in your viva."
+   ]
+  },
+  {
+   "type": "article",
+   "title": "Roadmap to become a web developer",
+   "date": "2026-10-27",
+   "summary": "What to learn first, next and last.",
+   "body": [
+    "Start with HTML and CSS. Then learn JavaScript.",
+    "Build three small projects. Then learn a framework like React.",
+    "Put everything on GitHub and share your portfolio link."
+   ]
+  },
+  {
+   "type": "blog",
+   "title": "How to learn programming without feeling lost",
+   "date": "2026-10-30",
+   "summary": "A simple weekly plan for beginners.",
+   "body": [
+    "Learn one concept, then build something tiny with it.",
+    "Repeat every week. Small projects add up fast."
+   ]
+  },
+  {
+   "type": "blog",
+   "title": "Why I started iterawin",
+   "date": "2026-10-20",
+   "summary": "The idea behind this page and what you can expect.",
+   "body": [
+    "I want every student to have a clear path from learning to a real project to a job.",
+    "Follow along. New posts, videos and projects arrive often."
+   ]
+  }
+ ]
+}

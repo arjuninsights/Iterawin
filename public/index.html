@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>iterawin – College projects, skills & motivation for students</title>
+<meta name="description" content="iterawin helps students with college projects, skill training, motivation and career guidance.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2338b6ff%22/><text x=%2250%22 y=%2272%22 font-size=%2270%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>i</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="siteHeader"></div>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="mark">Iterawin</div>
+        <p id="tagline"></p>
+        <div class="cta">
+          <a class="btn btn-dark" href="#services">See how I help</a>
+          <a class="btn btn-line" id="fbHero" href="#" target="_blank" rel="noopener">Follow on Facebook</a>
+        </div>
+      </div>
+      <aside class="latest" id="latest" aria-live="polite"></aside>
+    </div>
+  </div>
+
+  <div class="members" id="memberBar" hidden><div class="wrap">
+    <p>Create a free account to open full projects, courses, videos and articles.</p>
+    <div class="cta"><a class="btn btn-dark" href="login.html?tab=register">Create account</a><a class="btn btn-ghost" href="login.html">Login</a></div>
+  </div></div>
+
+  <section id="today" class="today"><div class="wrap">
+    <div class="today-head">
+      <div>
+        <p class="greet" id="greet"></p>
+        <h2 id="dateLine"></h2>
+      </div>
+      <div class="clock" id="clock" role="timer" aria-label="Current time"></div>
+    </div>
+    <div class="tiles">
+      <article class="tile"><small>Weather</small><div id="weather" class="big">Loading…</div><p id="weatherSub"></p></article>
+      <article class="tile"><small>Thought of the day</small><div id="quote" class="quote"></div></article>
+      <article class="tile"><small>Tip of the day</small><div id="tip" class="quote"></div></article>
+      <article class="tile"><small>Today on iterawin</small><div id="todayPosts" class="quote"></div></article>
+    </div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <h2>How I help students</h2>
+    <p class="lede">From your college project to your first job. Learn, build and stay motivated.</p>
+    <div class="grid" id="svcGrid" style="margin-top:26px"></div>
+    <div class="motive">
+      <p id="motiveText"></p>
+      <a class="btn btn-dark to-contact" href="#contact" data-topic="Mentorship & guidance">Talk to me</a>
+    </div>
+  </div></section>
+
+  <section id="learn"><div class="wrap">
+    <h2>Technologies I teach</h2>
+    <p class="lede">Step by step lessons with practice tasks. Tap a technology to see what it is and what you will learn.</p>
+    <div class="grid" id="techGrid" style="margin-top:26px"></div>
+    <p class="more"><a href="technologies.html">Open the technologies page</a></p>
+  </div></section>
+
+  <section id="posts"><div class="wrap">
+    <h2>Motivation, articles & videos</h2>
+    <p class="lede">Stories, study tips and lessons to keep you going.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter posts"></div>
+    <div class="grid" id="postGrid"></div>
+    <p class="more"><a href="motivation.html">Motivation page</a><a href="articles.html">Articles page</a><a href="blogs.html">Blogs page</a><a href="videos.html">Videos page</a></p>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <h2>College projects for students</h2>
+    <p class="lede">Ready-made and custom projects with source code, report and guidance. Tap a project to see its demo and details.</p>
+    <div class="grid" id="projGrid" style="margin-top:26px"></div>
+    <p class="more"><a href="projects.html">Open the projects page</a></p>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="connect">
+      <div>
+        <h2>Contact me</h2>
+        <p class="lede" style="color:inherit">Need a college project, want to learn a technology, or need guidance? Send a message and I will reply by email.</p>
+        <div class="cta" style="margin-top:20px">
+          <a class="btn btn-line" id="fbBtn" href="#" target="_blank" rel="noopener">Facebook page</a>
+          <a class="btn btn-line" id="ytBtn" href="#" target="_blank" rel="noopener">YouTube channel</a>
+        </div>
+      </div>
+      <form id="contactForm" novalidate>
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Topic
+          <select name="topic">
+            <option>College project</option>
+            <option>Learn a technology</option>
+            <option>Mentorship & guidance</option>
+            <option>General question</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <input type="text" name="botcheck" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button class="btn btn-dark" type="submit" id="sendBtn">Send message</button>
+        <p id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div></section>
+</main>
+
+<div id="siteFooter"></div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

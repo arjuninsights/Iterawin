@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Login – iterawin</title>
+<meta name="description" content="Log in to iterawin to open projects, courses, videos and articles.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2338b6ff%22/><text x=%2250%22 y=%2272%22 font-size=%2270%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>i</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="siteHeader"></div>
+<main><div class="auth-wrap"><div class="auth-card">
+  <h1>Welcome to iterawin</h1>
+  <p class="lede">Log in to open projects, courses, videos and articles.</p>
+  <div class="filters" role="group" aria-label="Login or create account">
+    <button class="chip" id="tabLogin" aria-pressed="true">Login</button>
+    <button class="chip" id="tabReg" aria-pressed="false">Create account</button>
+  </div>
+  <form id="loginForm" novalidate>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+    <button class="btn btn-dark" type="submit">Login</button>
+  </form>
+  <form id="regForm" novalidate hidden>
+    <label>Your name<input name="name" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>Password (8 or more characters)<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
+    <label>Confirm password<input name="confirm" type="password" autocomplete="new-password" required></label>
+    <button class="btn btn-dark" type="submit">Create account</button>
+  </form>
+  <p id="authMsg" role="status" aria-live="polite"></p>
+</div></div></main>
+<div id="siteFooter"></div>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
